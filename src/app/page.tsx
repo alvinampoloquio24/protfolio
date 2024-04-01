@@ -68,20 +68,29 @@ export default function Home() {
           <div className="flex justify-between items-center gap-9 k2d">
             <ul className="text-xl flex gap-9 text-white">
               <li>
-                <a href="#home">Home</a>
+                <a href="#home" className=" hover:text-cus">
+                  Home
+                </a>
               </li>
               <li>
-                <a href="#about">About</a>
+                <a href="#about" className="hover:text-custom-green">
+                  About
+                </a>
               </li>
               <li>
-                <a href="#service">Services</a>
-              </li>
-
-              <li>
-                <a href="#project">Projects</a>
+                <a href="#service" className="hover:text-custom-green">
+                  Services
+                </a>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <a href="#project" className="hover:text-custom-green">
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a href="#more-contact" className="hover:text-custom-green">
+                  Contact
+                </a>
               </li>
             </ul>
             <div
@@ -427,7 +436,7 @@ export default function Home() {
       </div>
       {/* 5555555555555 */}
       <div
-        id="#more-contact"
+        id="contact"
         className="h-screen flex flex-col items-center gap-6 justify-between"
         style={{ backgroundColor: "#29384F" }}
       >

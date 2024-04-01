@@ -6,6 +6,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+
   theme: {
     extend: {
       backgroundImage: {
@@ -19,6 +20,9 @@ const config: Config = {
       clipPath: {
         hexagon:
           "polygon(50% 0%, 85% 25%, 85% 75%, 50% 100%, 15% 75%, 15% 25%)",
+      },
+      colors: {
+        "custom-green": "#00DFC3",
       },
     },
   },
