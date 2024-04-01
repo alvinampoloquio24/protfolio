@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  font-family: "Cantarell", sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+.k2d {
+  font-family: var(--font-k2d);
+}
+.abel {
+  font-family: var(--font-abel);
+}
+::-webkit-scrollbar {
+  width: 1px; /* Adjust the width as needed */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Change the track color if desired */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Change the thumb color if desired */
+  border-radius: 3px; /* Add border-radius for a rounded thumb */
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.triangle {
+  left: -50px; /* Adjust this value to position the triangle */
+}
+.section-at-screen-height {
+  min-height: 100vh;
+  /* Additional styling */
+}
+html {
+  scroll-behavior: smooth;
+}
